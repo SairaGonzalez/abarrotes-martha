@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catálogo de Productos</title>
+    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="favicon.png" />
+  </head>
+
+  <body>
+    <div class="pagina">
+      <!--HEADER-->
+      <header class="encabezado">
+        <div class="logo">
+          <a href="index.html">
+            <img
+              src="/imagenes/Logo/groceries.png"
+              alt="Logo"
+              class="imagen-logo"
+            />
+          </a>
+          <h3>Abarrotes Martha</h3>
+        </div>
+        <div class="derecha">
+          <div class="menu">
+            <div class="iconos">
+              <div class="icono">
+                <a href="login.html">
+                  <img src="/imagenes/Iconos/perfil.png" alt="Perfil" />
+                </a>
+              </div>
+              <div class="icono">
+                <a href="carrito.html">
+                  <img src="/imagenes/Iconos/carrito.png" alt="Carrito" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="busqueda-nav">
+            <input type="text" placeholder="Buscar..." />
+            <nav class="nav-inline">
+              <a href="index.html" class="nav-btn-actual">Inicio</a>
+              <a href="catalogo.html" class="nav-btn">Productos</a>
+              <a href="nosotros.html" class="nav-btn">Nosotros</a>
+              <a href="contacto.html" class="nav-btn">Contacto</a>
+            </nav>
+          </div>
+        </div>
+      </header>
+      
+      <!--CARRITO-->>
+      <section class="CARRITO">
+        <div class="container">
+            <!-- Sección principal del carrito -->
+            <div class="carrito-seccion">
+                <h1 class="carrito-titulo">Mi Carrito</h1>
+                
+                <div class="carrito-items">
+                    <div class="carrito-vacio">
+                        Tu carrito está vacío
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Sección de pago -->
+            <div class="pago-seccion">
+                <h2 class="pago-titulo">Resumen de compra</h2>
+                
+                <div class="metodo-pago">
+                    <h3>Método de pago</h3>
+                    <div class="switch-container">
+                        <span class="switch-text activo" id="texto-efectivo">Efectivo</span>
+                        
+                        <label class="switch">
+                            <input type="checkbox" id="toggle-pago" onchange="cambiarMetodoPago()">
+                            <span class="slider"></span>
+                        </label>
+                        
+                        <span class="switch-text" id="texto-electronico">Electrónico</span>
+                    </div>
+                </div>
+                
+                <button class="btn-pagar">Pagar</button>
+                
+                <div class="seleccion-tarjeta desactivado" id="seleccion-tarjeta">
+                    <label for="tarjetas">Seleccionar tarjeta:</label>
+                    <select id="tarjetas">
+                        <option value="">-- Seleccione una tarjeta --</option>
+                        <option value="visa">Visa **** 1234</option>
+                        <option value="mastercard">Mastercard **** 5678</option>
+                        <option value="amex">American Express **** 9012</option>
+                    </select>
+                </div>
+                
+                <div class="resumen-pago">
+                    <div class="resumen-linea">
+                        <span>Subtotal:</span>
+                        <span>$0.00</span>
+                    </div>
+                    <div class="resumen-linea">
+                        <span>Envío:</span>
+                        <span>$0.00</span>
+                    </div>
+                    <div class="resumen-linea">
+                        <span>Descuentos:</span>
+                        <span>$0.00</span>
+                    </div>
+                    <div class="resumen-linea total">
+                        <span>Total:</span>
+                        <span>$0.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>    
+      </section>
+
+      <!--FOOTER-->
+      <footer>
+        <div class="footer-contenido">
+          <div class="footer-enlaces">
+            <div class="fila-footer">
+              <a href="#">Contacto</a>
+              <a href="#">Preguntas frecuentes</a>
+            </div>
+            <div class="fila-footer">
+              <a href="#">Privacidad</a>
+              <a href="#">Términos de uso</a>
+              <a href="#">Cookies</a>
+            </div>
+          </div>
+          <div class="footer-derechos">
+            <p>© 2025 Tienda de Abarrotes Martha</p>
+          </div>
+        </div>
+      </footer>
+      <!--CHAT-->
+      <button id="chat-toggle" class="chat-btn">
+        <img src="/imagenes/Iconos/chat.png" alt="Chat" />
+      </button>
+      <div id="ventana-chat" class="ventana-chat">
+        <div class="chat-header">Chat de Ayuda</div>
+        <div class="chat-mensajes"></div>
+        <div class="chat-input">
+          <textarea
+            placeholder="Escribe tu mensaje..."
+            rows="2"
+            class="mensaje-textarea"
+          ></textarea>
+          <button class="btn-enviar">
+            <img src="/imagenes/Iconos/enviar.png" alt="Enviar" />
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
