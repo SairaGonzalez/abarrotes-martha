@@ -26,7 +26,7 @@
           <div class="menu">
             <div class="iconos">
               <div class="icono">
-                <a href="login.html">
+                <a href="perfil.html">
                   <img src="/imagenes/Iconos/perfil.png" alt="Perfil" />
                 </a>
               </div>
@@ -48,96 +48,128 @@
           </div>
         </div>
       </header>
-      
+
       <!--INFORMACION DEL PRODUCTO-->
       <section class="INFOPRODUCTO">
         <div class="container">
-            <!-- Sección principal del producto -->
-            <div class="producto-detalle">
-                <div class="producto-header">
-                    <h1 class="producto-titulo">Manzanas</h1>
-                    <a href="catalogo.html" class="volver-catalogo">← Volver al catálogo</a>
-                </div>
-                
-                <div class="producto-contenido">
-                    <div class="producto-imagenes">
-                        <img id="imagen-principal" src="https://via.placeholder.com/600x600?text=Manzanas" alt="Manzanas" class="imagen-principal">
-                        <div class="imagenes-secundarias">
-                            <img src="https://via.placeholder.com/300x300?text=Manzanas+1" alt="Manzanas 1" class="imagen-secundaria activa" onclick="cambiarImagen(this)">
-                            <img src="https://via.placeholder.com/300x300?text=Manzanas+2" alt="Manzanas 2" class="imagen-secundaria" onclick="cambiarImagen(this)">
-                            <img src="https://via.placeholder.com/300x300?text=Manzanas+3" alt="Manzanas 3" class="imagen-secundaria" onclick="cambiarImagen(this)">
-                        </div>
-                    </div>
-                    
-                    <div class="producto-info">
-                        <div class="producto-categoria">Frutas</div>
-                        <div class="producto-modelo">Ref/Cod: MZ-ROJA-001</div>
-                        <div class="producto-marca">Marca: Sin Marca</div>
-                        
-                        <div class="producto-precio">
-                            $25.50 MXN / kg
-                        </div>
-                        
-                        <div class="producto-calificacion">
-                            ★★★★☆ (4.2/5)
-                        </div>
-                        
-                        <p class="producto-descripcion">
-                            Manzanas rojas frescas, cultivadas localmente. Deliciosas para comer solas o usar en postres. 
-                            Cada manzana es seleccionada cuidadosamente para garantizar su frescura y sabor. 
-                            Ideal para una alimentación saludable. Contiene vitaminas A, C y fibra dietética.
-                        </p>
-                        
-                        <div class="cantidad-selector">
-                            <button onclick="cambiarCantidad(-1)">-</button>
-                            <input type="number" id="cantidad" value="1" min="1" max="10">
-                            <button onclick="cambiarCantidad(1)">+</button>
-                        </div>
-                        
-                        <div class="botones-compra">
-                            <button class="btn-agregar" onclick="agregarAlCarrito()">Agregar al carrito</button>
-                            <button class="btn-comprar">Comprar Ya</button>
-                        </div>
-                    </div>
-                    
-                    <div class="seccion-comentarios">
-                        <h3>Deja tu comentario</h3>
-                        <div class="calificacion-comentario">
-                            <span>Calificación:</span>
-                            <select id="calificacion-comentario">
-                                <option value="5">★★★★★</option>
-                                <option value="4">★★★★☆</option>
-                                <option value="3">★★★☆☆</option>
-                                <option value="2">★★☆☆☆</option>
-                                <option value="1">★☆☆☆☆</option>
-                            </select>
-                        </div>
-                        <textarea class="comentario-texto" placeholder="Escribe tu comentario sobre este producto..."></textarea>
-                        <button class="btn-enviar-comentario">Enviar comentario</button>
-                    </div>
-                </div>
+          <!-- Sección principal del producto -->
+          <div class="producto-detalle">
+            <div class="producto-header">
+              <h1 class="producto-titulo">Manzanas</h1>
+              <a href="catalogo.html" class="volver-catalogo"
+                >← Volver al catálogo</a
+              >
             </div>
-            
-            <!-- Sección del carrito -->
-            <div class="carrito-lateral">
-                <div class="carrito-header">
-                    <img src="https://via.placeholder.com/30x30?text=🛒" alt="Carrito" class="carrito-icono">
-                    <h3 class="carrito-titulo">Tu Carrito</h3>
+
+            <div class="producto-contenido">
+              <div class="producto-imagenes">
+                <img
+                  id="imagen-principal"
+                  src="https://via.placeholder.com/600x600?text=Manzanas"
+                  alt="Manzanas"
+                  class="imagen-principal"
+                />
+                <div class="imagenes-secundarias">
+                  <img
+                    src="https://via.placeholder.com/300x300?text=Manzanas+1"
+                    alt="Manzanas 1"
+                    class="imagen-secundaria activa"
+                    onclick="cambiarImagen(this)"
+                  />
+                  <img
+                    src="https://via.placeholder.com/300x300?text=Manzanas+2"
+                    alt="Manzanas 2"
+                    class="imagen-secundaria"
+                    onclick="cambiarImagen(this)"
+                  />
+                  <img
+                    src="https://via.placeholder.com/300x300?text=Manzanas+3"
+                    alt="Manzanas 3"
+                    class="imagen-secundaria"
+                    onclick="cambiarImagen(this)"
+                  />
                 </div>
-                
-                <div class="carrito-items" id="carrito-items">
-                    <div class="carrito-vacio" id="carrito-vacio">
-                        Tu carrito está vacío
-                    </div>
-                    <!-- div para agregar elementos al carrito, no funcional de momento -->
+              </div>
+
+              <div class="producto-info">
+                <div class="producto-categoria">Frutas</div>
+                <div class="producto-modelo">Ref/Cod: MZ-ROJA-001</div>
+                <div class="producto-marca">Marca: Sin Marca</div>
+
+                <div class="producto-precio">$25.50 MXN / kg</div>
+
+                <div class="producto-calificacion">★★★★☆ (4.2/5)</div>
+
+                <p class="producto-descripcion">
+                  Manzanas rojas frescas, cultivadas localmente. Deliciosas para
+                  comer solas o usar en postres. Cada manzana es seleccionada
+                  cuidadosamente para garantizar su frescura y sabor. Ideal para
+                  una alimentación saludable. Contiene vitaminas A, C y fibra
+                  dietética.
+                </p>
+
+                <div class="cantidad-selector">
+                  <button onclick="cambiarCantidad(-1)">-</button>
+                  <input
+                    type="number"
+                    id="cantidad"
+                    value="1"
+                    min="1"
+                    max="10"
+                  />
+                  <button onclick="cambiarCantidad(1)">+</button>
                 </div>
-                
-                <div class="carrito-total" id="carrito-total">
-                    Total: $0.00
+
+                <div class="botones-compra">
+                  <button class="btn-agregar" onclick="agregarAlCarrito()">
+                    Agregar al carrito
+                  </button>
+                  <button class="btn-comprar">Comprar Ya</button>
                 </div>
+              </div>
+
+              <div class="seccion-comentarios">
+                <h3>Deja tu comentario</h3>
+                <div class="calificacion-comentario">
+                  <span>Calificación:</span>
+                  <select id="calificacion-comentario">
+                    <option value="5">★★★★★</option>
+                    <option value="4">★★★★☆</option>
+                    <option value="3">★★★☆☆</option>
+                    <option value="2">★★☆☆☆</option>
+                    <option value="1">★☆☆☆☆</option>
+                  </select>
+                </div>
+                <textarea
+                  class="comentario-texto"
+                  placeholder="Escribe tu comentario sobre este producto..."
+                ></textarea>
+                <button class="btn-enviar-comentario">Enviar comentario</button>
+              </div>
             </div>
+          </div>
+
+          <!-- Sección del carrito -->
+          <div class="carrito-lateral">
+            <div class="carrito-header">
+              <img
+                src="https://via.placeholder.com/30x30?text=🛒"
+                alt="Carrito"
+                class="carrito-icono"
+              />
+              <h3 class="carrito-titulo">Tu Carrito</h3>
+            </div>
+
+            <div class="carrito-items" id="carrito-items">
+              <div class="carrito-vacio" id="carrito-vacio">
+                Tu carrito está vacío
+              </div>
+              <!-- div para agregar elementos al carrito, no funcional de momento -->
+            </div>
+
+            <div class="carrito-total" id="carrito-total">Total: $0.00</div>
+          </div>
         </div>
-        
       </section>
 
       <!--FOOTER-->
@@ -145,7 +177,7 @@
         <div class="footer-contenido">
           <div class="footer-enlaces">
             <div class="fila-footer">
-              <a href="#">Contacto</a>
+              <a href="contacto.html">Contacto</a>
               <a href="FAQs.html">Preguntas frecuentes</a>
             </div>
             <div class="fila-footer">

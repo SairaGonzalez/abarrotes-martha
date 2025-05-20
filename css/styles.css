@@ -701,7 +701,7 @@ footer {
   width: 20%;
   padding: 20px;
   background-color: #fff;
-  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
   height: 100vh;
   overflow-y: auto;
 }
@@ -801,7 +801,7 @@ footer {
   background-color: #fff;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
 
@@ -959,7 +959,8 @@ footer {
   border: 2px solid transparent;
 }
 
-.INFOPRODUCTO .imagen-secundaria:hover, .imagen-secundaria.activa {
+.INFOPRODUCTO .imagen-secundaria:hover,
+.imagen-secundaria.activa {
   border-color: #28a745;
 }
 
@@ -1301,7 +1302,7 @@ footer {
   right: 0;
   bottom: 0;
   background-color: #ccc;
-  transition: .4s;
+  transition: 0.4s;
   border-radius: 34px;
 }
 
@@ -1313,7 +1314,7 @@ footer {
   left: 4px;
   bottom: 4px;
   background-color: white;
-  transition: .4s;
+  transition: 0.4s;
   border-radius: 50%;
 }
 
@@ -1433,7 +1434,7 @@ footer {
 }
 
 .faq-question::after {
-  content: '+';
+  content: "+";
   font-size: 1.5em;
   transition: transform 0.3s;
 }
@@ -1467,133 +1468,69 @@ footer {
 
 .faq-answer li {
   margin-bottom: 8px;
-
-  
-#cuerpog{
-    margin: 0;
-    padding: 0;
-    background-color: white;
-    color: rgb(31, 31, 31);
-    font-family: sans-serif;
-
 }
 
-#texto h2{
-    color: rgb(96, 96, 96);
-    margin: 6px 0;
+/* NOSOTROS */
+.card-generica {
+  background-color: #f7f7f7;
+  padding: 30px;
+  border-radius: 16px;
+  margin: 0 auto 40px auto;
+  max-width: 900px;
+  border: 1px solid #6f6f6f2e;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  text-align: left;
 }
 
-#cuerpo{
-    display: flex;
-    flex-direction: row;
-    margin: 5%;
-
+.card-generica h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: black;
+  text-align: center;
 }
 
-#cuerpo div{
-    flex: 1;
-    padding: 0 3%;
+.card-generica p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #555;
+  text-align: justify;
+}
+.historia-contenido {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 20px;
 }
 
-#imagen img{
-    width: 100%;
-    height: auto;
+.historia-contenido p {
+  flex: 0 0 40%;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444444;
+  min-width: 250px;
+  text-align: justify;
 }
 
-#footer {
-    background-color: rgb(31, 31, 31);
-    height: 200px;
+.imagen-historia {
+  width: 700px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  flex-shrink: 0;
 }
-
-#footer h4{
-    background-color: rgb(31, 31, 31);
-    color: whitesmoke; 
-    padding: 2% 3%;
+.doble-columna {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
 }
-
-#footer ul{
-    background-color: rgb(31, 31, 31);
-    margin: 0 5%;
-    list-style-type: none;
+.lista-politicas {
+  padding-left: 20px;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #444;
 }
-
-#footer ul li{
-    background-color: rgb(31, 31, 31);
-    color: whitesmoke; 
-    text-decoration: underline;
-    margin: 1% 0;
-    
-}
-
-#contacto{
-    border-radius: 7px;
-    text-align: left;
-    border-style: solid;
-    border-width: 2.5px;
-    border-color: rgb(180, 180, 180);
-    margin: 50px 35px;
-    padding: 10px 15px 50px 15px;
-    font-size: 20px;
-}
-
-#contacto span{
-    font-weight: bold;
-    margin: 7px;
-}
-
-#cuerpog h1{
-    text-align: center;
-    font-weight: bolder;
-}
-
-#cuerpog h3{
-    text-align: center;
-    color: rgb(146, 146, 146);
-    font-weight: bold;
-}
-
-#cuerpo_perfil{
-    padding: 20px 0;
-}
-
-#cuerpog table{
-    border-radius: 7px;
-    border-style: solid;
-    border-width: 2.5px;
-    border-color: rgb(180,180,180);
-    margin: 0 35px 60px;
-    width: 94.5%;
-    padding: 10px 20px 50px;
-}
-
-#cuerpog tbody{
-    height: 40px;
-
-}
-
-#cuerpog table td{
-    padding: 0 40px 0 40px;
-    font-size: 20px;
-    
-}
-
-#cuerpog table span{
- color: gray;
- text-decoration: underline;   
- font-style: italic;
- font-size: 15px;
-}
-
-#cuerpog table th{
-    font-weight: bold;
-    border-style: solid;
-    border-width: 0 0 2px 0;
-    border-color: gray;
-    padding: 10px;
-    font-size: 25px;
-}
-
-#cuerpog a{
-    background-color: transparent;
-    color: white;
+.lista-politicas li {
+  margin-bottom: 15px;
 }
