@@ -60,6 +60,18 @@ select {
   gap: 10px;
 }
 
+.icono {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.texto-login {
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
+}
+
 .icono img {
   height: 40px;
   width: 40px;
@@ -149,14 +161,16 @@ select {
   gap: 20px;
   overflow-x: hidden;
   scroll-behavior: smooth;
-  width: 100%;
-  max-width: 1000px;
+  width: 1020px;
+  padding: 0;
 }
 
 .container-promociones {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+  padding: 0;
 }
 
 .card-promos {
@@ -169,6 +183,7 @@ select {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  flex: 0 0 auto;
 }
 
 .card-promos img {
@@ -210,12 +225,6 @@ select {
   color: red;
   font-weight: bold;
   font-size: 1rem;
-}
-
-.flechas {
-  font-size: 24px;
-  cursor: pointer;
-  margin: 0 10px;
 }
 
 /* Flechas carousel */
