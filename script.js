@@ -208,8 +208,54 @@ function initCarousel() {
 }
 
 // =============================================
-// Inicialización de todas las funcionalidades
+// Función para cambiar la imagen principal
+function cambiarImagen(elemento) {
+    const imagenPrincipal = document.getElementById('imagen-principal');
+    imagenPrincipal.src = elemento.src;
+    
+    // Actualizar clases activas
+    document.querySelectorAll('.imagen-secundaria').forEach(img => {
+        img.classList.remove('activa');
+    });
+    elemento.classList.add('activa');
+}
 
+// =============================================
+// Función para cambiar la cantidad
+function cambiarCantidad(cambio) {
+    const inputCantidad = document.getElementById('cantidad');
+    let nuevaCantidad = parseInt(inputCantidad.value) + cambio;
+    
+    if (nuevaCantidad < 1) nuevaCantidad = 1;
+    if (nuevaCantidad > 10) nuevaCantidad = 10;
+    
+    inputCantidad.value = nuevaCantidad;
+}
+
+// =============================================
+// Función para cambiar el metodo de pago
+function cambiarMetodoPago() {
+    const toggle = document.getElementById('toggle-pago');
+    const selectorTarjeta = document.getElementById('seleccion-tarjeta');
+    const textoEfectivo = document.getElementById('texto-efectivo');
+    const textoElectronico = document.getElementById('texto-electronico');
+    
+    if (toggle.checked) {
+        // Pago electrónico seleccionado
+        selectorTarjeta.classList.remove('desactivado');
+        textoEfectivo.classList.remove('activo');
+        textoElectronico.classList.add('activo');
+    } else {
+        // Efectivo seleccionado
+        selectorTarjeta.classList.add('desactivado');
+        textoEfectivo.classList.add('activo');
+        textoElectronico.classList.remove('activo');
+        document.getElementById('tarjetas').value = '';
+    }
+}
+
+// =============================================
+// Inicialización de todas las funcionalidades
 
 document.addEventListener('DOMContentLoaded', () => {
   // Funcionalidades que se ejecutan en todas las páginas
