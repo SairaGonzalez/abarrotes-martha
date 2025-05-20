@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/styles.css" rel="stylesheet" />
     <title>Mi perfil</title>
-</head>
-<body id="cuerpog">
-    
-    <header class="encabezado">
+  </head>
+  <body>
+    <div class="pagina">
+      <!--HEADER-->
+      <header class="encabezado">
         <div class="logo">
           <a href="index.html">
             <img
@@ -37,42 +38,112 @@
           <div class="busqueda-nav">
             <input type="text" placeholder="Buscar..." />
             <nav class="nav-inline">
-              <a href="index.html" class="nav-btn-actual">Inicio</a>
+              <a href="index.html" class="nav-btn">Inicio</a>
               <a href="catalogo.html" class="nav-btn">Productos</a>
-              <a href="nosotros.html" class="nav-btn">Nosotros</a>
+              <a href="nosotros.html" class="nav-btn-actual">Nosotros</a>
               <a href="contacto.html" class="nav-btn">Contacto</a>
             </nav>
           </div>
         </div>
-    </header>
-    <div id="cuerpo_perfil"></div>
-    <main>
+      </header>
+
+      <main class="perfil-usuario">
         <h1>Mi perfil</h1>
-        <h3>Detalles</h3>
-        <div id="contacto">
-            <span>Contacto</span>
-            <p><span>Telefono:</span>1234567890</p>
-            <p><span>Correo:</span>correoejemplo@gmail.com</p>
+        <div class="perfil-grid">
+          <section class="perfil-card perfil-datos">
+            <h2>Datos de usuario</h2>
+            <div class="perfil-contenido">
+              <div class="perfil-info">
+                <img
+                  src="/imagenes/Iconos/perfil.png"
+                  alt="Foto de perfil"
+                  class="foto-perfil"
+                />
+              </div>
+              <div class="contacto-grid">
+                <div><strong>Nombre completo:</strong> Héctor Ramírez</div>
+                <div><strong>Teléfono:</strong> 3356082342</div>
+                <div><strong>Correo:</strong> hector@correo.com</div>
+                <div>
+                  <strong>Dirección:</strong> Calle Nombre 73, Col. Tlaquepaque
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="perfil-card perfil-pedidos">
+            <h2>Historial de pedidos</h2>
+            <table class="tabla-pedidos">
+              <thead>
+                <tr>
+                  <th>Número de pedido</th>
+                  <th>Fecha</th>
+                  <th>Estatus</th>
+                  <th>Detalle</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>123456</td>
+                  <td>03/02/2025</td>
+                  <td>Completado</td>
+                  <td><a href="#">Ver pedido</a></td>
+                </tr>
+                <tr>
+                  <td>123457</td>
+                  <td>05/02/2025</td>
+                  <td>En curso</td>
+                  <td><a href="#">Ver pedido</a></td>
+                </tr>
+                <tr>
+                  <td>123458</td>
+                  <td>06/02/2025</td>
+                  <td>Pendiente</td>
+                  <td><a href="#">Ver pedido</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
         </div>
-        <div id="tabla">
-        <table>
-            <thead><tr><th>Historial de pedidos</th></tr></thead>
-            <tbody><tr><td>☆ #123456 <span>Detalle de pedido</span></td></tr></tbody>
-            <tbody><tr><td>☆ #123456 <span>Detalle de pedido</span></td></tr></tbody>
-            <tbody><tr><td>☆ #123456 <span>Detalle de pedido</span></td></tr></tbody>
-            <tbody><tr><td>☆ #123456 <span>Detalle de pedido</span></td></tr></tbody>
-        </table>
+      </main>
+
+      <!--FOOTER-->
+      <footer>
+        <div class="footer-contenido">
+          <div class="footer-enlaces">
+            <div class="fila-footer">
+              <a href="contacto.html">Contacto</a>
+              <a href="FAQs.html">Preguntas frecuentes</a>
+            </div>
+            <div class="fila-footer">
+              <a href="#">Privacidad</a>
+              <a href="#">Términos de uso</a>
+              <a href="#">Cookies</a>
+            </div>
+          </div>
+          <div class="footer-derechos">
+            <p>© 2025 Tienda de Abarrotes Martha</p>
+          </div>
         </div>
-    </main>
+      </footer>
+      <!--CHAT-->
+      <button id="chat-toggle" class="chat-btn">
+        <img src="/imagenes/Iconos/chat.png" alt="Chat" />
+      </button>
+      <div id="ventana-chat" class="ventana-chat">
+        <div class="chat-header">Chat de Ayuda</div>
+        <div class="chat-mensajes"></div>
+        <div class="chat-input">
+          <textarea
+            placeholder="Escribe tu mensaje..."
+            rows="2"
+            class="mensaje-textarea"
+          ></textarea>
+          <button class="btn-enviar">
+            <img src="/imagenes/Iconos/enviar.png" alt="Enviar" />
+          </button>
+        </div>
+      </div>
     </div>
-    <footer id="footer">
-        <h4>Navegacion</h4>
-        <ul>
-            <li><a href="">Inicio</a></li>
-            <li><a href="">Productos</a></li>
-            <li><a href="">Contacto</a></li>
-        </ul>
-    </footer>
-    
-</body>
+  </body>
 </html>

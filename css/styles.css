@@ -1534,3 +1534,90 @@ footer {
 .lista-politicas li {
   margin-bottom: 15px;
 }
+
+/* PERFIL */
+.perfil-usuario {
+  padding: 30px;
+}
+
+.perfil-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.perfil-card {
+  flex: 1 1 45%;
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #6f6f6f2e;
+  min-width: 300px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.perfil-card h2 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.perfil-info {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.foto-perfil {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+}
+
+.contacto-grid {
+  display: grid;
+  gap: 12px;
+  flex: 1 1 auto;
+}
+
+.perfil-pedidos table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  font-size: 0.95rem;
+}
+
+.perfil-pedidos th,
+.perfil-pedidos td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+.perfil-pedidos th {
+  background-color: #e4e4e4;
+  font-weight: 600;
+}
+
+.perfil-pedidos a {
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.perfil-pedidos a:hover {
+  text-decoration: underline;
+}
+.perfil-contenido {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.perfil-info {
+  flex: 0 0 auto;
+}
