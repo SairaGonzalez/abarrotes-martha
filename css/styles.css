@@ -203,7 +203,7 @@ select {
 
 .texto-card-promociones h5 {
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: bold;
 }
 
 .precios {
