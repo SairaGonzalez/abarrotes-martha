@@ -836,6 +836,9 @@ footer {
 
 .CATALOGO .product-info {
   padding: 15px;
+
+  display: block;
+  text-decoration: none;
 }
 
 .CATALOGO .product-name {

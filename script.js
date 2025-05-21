@@ -11,6 +11,7 @@ function initCatalog() {
       rating: 4,
       description: "Barra de jabón corporal 150g",
       image: "imagenes/productos/escudo.png",
+      ref: "producto-ref.html"
     },
     {
       id: 2,
@@ -21,6 +22,7 @@ function initCatalog() {
       rating: 5,
       description: "Cereal Corn Flakes 370g",
       image: "imagenes/productos/cereal.png",
+      ref: "#"
     },
     {
       id: 3,
@@ -31,6 +33,7 @@ function initCatalog() {
       rating: 4,
       description: "Leche entera pasteurizada 3,78L",
       image: "imagenes/productos/lechelala.png",
+      ref: "#"
     },
     {
       id: 4,
@@ -41,6 +44,7 @@ function initCatalog() {
       rating: 4,
       description: "Yogur bebible de manzana 220g",
       image: "imagenes/productos/yogur.png",
+      ref: "#"    
     },
     {
       id: 5,
@@ -51,6 +55,7 @@ function initCatalog() {
       rating: 4,
       description: "Papas fritas sabor jalapeño 170g",
       image: "imagenes/productos/chips.png",
+      ref: "#"
     },
     {
       id: 6,
@@ -61,6 +66,7 @@ function initCatalog() {
       rating: 5,
       description: "Galletas con relleno sabor nata 70g",
       image: "imagenes/productos/galletas.png",
+      ref: "#"
     },
     {
       id: 7,
@@ -71,6 +77,7 @@ function initCatalog() {
       rating: 4,
       description: "Jugo de durazno 413ml",
       image: "imagenes/productos/jugovalle.png",
+      ref: "#"
     },
     {
       id: 8,
@@ -81,6 +88,7 @@ function initCatalog() {
       rating: 4,
       description: "Sobre de sopa 95g",
       image: "imagenes/productos/knorr.png",
+      ref: "#"
     },
     {
       id: 9,
@@ -91,6 +99,7 @@ function initCatalog() {
       rating: 4,
       description: "Mantecadas con nuez 184,5g",
       image: "imagenes/productos/mantecadas.png",
+      ref: "#"
     },
     {
       id: 10,
@@ -101,6 +110,7 @@ function initCatalog() {
       rating: 5,
       description: "Sopa instantánea con camarón, limón y habanero 64g",
       image: "imagenes/productos/maruchan.png",
+      ref: "#"
     },
     {
       id: 11,
@@ -111,6 +121,7 @@ function initCatalog() {
       rating: 4,
       description: "Pastelito de naranja con pasas 140g",
       image: "imagenes/productos/Napolitanos.png",
+      ref: "#"
     },
     {
       id: 12,
@@ -121,6 +132,7 @@ function initCatalog() {
       rating: 4,
       description: "Pastelito con cubierta y relleno de chocolate 62g",
       image: "imagenes/productos/nito.png",
+      ref: "#"
     },
     {
       id: 13,
@@ -131,6 +143,7 @@ function initCatalog() {
       rating: 3,
       description: "Roles de canela glaseados 205g",
       image: "imagenes/productos/roles.png",
+      ref: "#"
     },
     {
       id: 14,
@@ -141,6 +154,7 @@ function initCatalog() {
       rating: 4,
       description: "Papas fritas sabor queso 50g",
       image: "imagenes/productos/rufles.png",
+      ref: "#"
     },
     {
       id: 15,
@@ -151,6 +165,7 @@ function initCatalog() {
       rating: 3,
       description: "Electrolitos orales sabor manzana 625ml",
       image: "imagenes/productos/suero.png",
+      ref: "#"
     },
     {
       id: 16,
@@ -161,6 +176,7 @@ function initCatalog() {
       rating: 5,
       description: "Papas fritas con chile y limón 65g",
       image: "imagenes/productos/takis.png",
+      ref: "#"
     },
     {
       id: 17,
@@ -171,6 +187,7 @@ function initCatalog() {
       rating: 4,
       description: "Papas fritas con chile y limón 65g",
       image: "imagenes/productos/takisfuego.png",
+      ref: "#"
     },
     {
       id: 18,
@@ -181,6 +198,7 @@ function initCatalog() {
       rating: 3,
       description: "Galletas sabor fresa 100g",
       image: "imagenes/productos/tartinas.png",
+      ref: "#"
     },
     {
       id: 19,
@@ -191,6 +209,7 @@ function initCatalog() {
       rating: 4,
       description: "Tostadas fritas de maíz 360g",
       image: "imagenes/productos/tostadas.png",
+      ref: "#"
     },
     {
       id: 20,
@@ -201,6 +220,7 @@ function initCatalog() {
       rating: 4,
       description: "Papas fritas sabor queso 75g",
       image: "imagenes/productos/wapas.png",
+      ref: "#"
     },
   ];
 
@@ -232,15 +252,13 @@ function initCatalog() {
             <div class="product-image">
                 <img src="${product.image}" alt="${product.name}">
             </div>
-            <div class="product-info">
+            <a class="product-info" href="${product.ref}">
                 <div class="product-name">${product.name}</div>
                 <div class="product-brand">${product.brand}</div>
                 <div class="product-price">$${product.price.toFixed(2)}</div>
                 <div class="product-description">${product.description}</div>
-                <div class="product-rating">${"★".repeat(
-                  product.rating
-                )}${"☆".repeat(5 - product.rating)}</div>
-            </div>
+                <div class="product-rating">${'★'.repeat(product.rating)}${'☆'.repeat(5 - product.rating)}</div>
+            </a>
         `;
 
       productsContainer.appendChild(productCard);
