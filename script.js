@@ -2,26 +2,26 @@
 function initCatalog() {
   // Datos de ejemplo de productos 
   const products = [
-    { id: 1, name: "Manzanas", price: 25.50, category: "Frutas", brand: "Sin Marca", rating: 4, description: "Manzanas rojas frescas por kilo.", image: "https://via.placeholder.com/300x300?text=Manzanas" },
-    { id: 2, name: "Plátanos", price: 18.00, category: "Frutas", brand: "Sin Marca", rating: 5, description: "Plátanos maduros por kilo.", image: "https://via.placeholder.com/300x300?text=Plátanos" },
-    { id: 3, name: "Leche Entera", price: 32.50, category: "Lácteos", brand: "Lala", rating: 4, description: "Leche entera pasteurizada 1 litro.", image: "https://via.placeholder.com/300x300?text=Leche+Lala" },
-    { id: 4, name: "Yogur Natural", price: 15.00, category: "Lácteos", brand: "Lala", rating: 4, description: "Yogur natural sin azúcar 250g.", image: "https://via.placeholder.com/300x300?text=Yogur+Lala" },
-    { id: 5, name: "Pan Blanco", price: 38.00, category: "Cereales", brand: "Bimbo", rating: 3, description: "Pan blanco grande 680g.", image: "https://via.placeholder.com/300x300?text=Pan+Bimbo" },
-    { id: 6, name: "Papas Sabritas", price: 18.50, category: "Botanas", brand: "Sabritas", rating: 5, description: "Papas fritas sabor original 45g.", image: "https://via.placeholder.com/300x300?text=Sabritas" },
-    { id: 7, name: "Jugo de Naranja", price: 22.00, category: "Jugos", brand: "Jumex", rating: 4, description: "Jugo de naranja 1 litro.", image: "https://via.placeholder.com/300x300?text=Jugo+Jumex" },
-    { id: 8, name: "Atún en Lata", price: 28.00, category: "Enlatados", brand: "Nobel", rating: 4, description: "Atún en agua 140g.", image: "https://via.placeholder.com/300x300?text=Atún+Nobel" },
-    { id: 9, name: "Zanahorias", price: 12.00, category: "Verduras", brand: "Sin Marca", rating: 4, description: "Zanahorias frescas por kilo.", image: "https://via.placeholder.com/300x300?text=Zanahorias" },
-    { id: 10, name: "Galletas Oreo", price: 25.00, category: "Postres", brand: "Bimbo", rating: 5, description: "Galletas sabor chocolate 156g.", image: "https://via.placeholder.com/300x300?text=Oreo" },
-    { id: 11, name: "Queso Panela", price: 85.00, category: "Lácteos", brand: "Lala", rating: 4, description: "Queso panela 400g.", image: "https://via.placeholder.com/300x300?text=Queso+Panela" },
-    { id: 12, name: "Fresas", price: 45.00, category: "Frutas", brand: "Sin Marca", rating: 4, description: "Fresas frescas por kilo.", image: "https://via.placeholder.com/300x300?text=Fresas" },
-    { id: 13, name: "Cereal Zucaritas", price: 65.00, category: "Cereales", brand: "Bimbo", rating: 3, description: "Cereal de maíz azucarado 500g.", image: "https://via.placeholder.com/300x300?text=Zucaritas" },
-    { id: 14, name: "Palomitas Act II", price: 15.50, category: "Botanas", brand: "Bimbo", rating: 4, description: "Palomitas para microondas mantequilla.", image: "https://via.placeholder.com/300x300?text=Palomitas" },
-    { id: 15, name: "Lechuga", price: 10.00, category: "Verduras", brand: "Sin Marca", rating: 4, description: "Lechuga romana fresca por pieza.", image: "https://via.placeholder.com/300x300?text=Lechuga" },
-    { id: 16, name: "Pastelito Gansito", price: 12.00, category: "Postres", brand: "Bimbo", rating: 5, description: "Pastelito cubierto de chocolate.", image: "https://via.placeholder.com/300x300?text=Gansito" },
-    { id: 17, name: "Chiles Jalapeños", price: 35.00, category: "Enlatados", brand: "Nobel", rating: 4, description: "Chiles jalapeños en escabeche 220g.", image: "https://via.placeholder.com/300x300?text=Jalapeños" },
-    { id: 18, name: "Jugo de Manzana", price: 24.00, category: "Jugos", brand: "Jumex", rating: 4, description: "Jugo de manzana 1 litro.", image: "https://via.placeholder.com/300x300?text=Jugo+Manzana" },
-    { id: 19, name: "Tomates", price: 20.00, category: "Verduras", brand: "Sin Marca", rating: 4, description: "Tomates rojos por kilo.", image: "https://via.placeholder.com/300x300?text=Tomates" },
-    { id: 20, name: "Yogur con Fruta", price: 18.00, category: "Lácteos", brand: "Lala", rating: 4, description: "Yogur con trozos de fruta 250g.", image: "https://via.placeholder.com/300x300?text=Yogur+Fruta" }
+    { id: 1, name: "Manzanas", price: 25.50, category: "Frutas", brand: "Sin Marca", rating: 4, description: "Manzanas rojas frescas por kilo.", image: "https://via.placeholder.com/300x300?text=Manzanas", ref: "producto-ref.html" },
+    { id: 2, name: "Plátanos", price: 18.00, category: "Frutas", brand: "Sin Marca", rating: 5, description: "Plátanos maduros por kilo.", image: "https://via.placeholder.com/300x300?text=Plátanos", ref: "#" },
+    { id: 3, name: "Leche Entera", price: 32.50, category: "Lácteos", brand: "Lala", rating: 4, description: "Leche entera pasteurizada 1 litro.", image: "https://via.placeholder.com/300x300?text=Leche+Lala", ref: "#" },
+    { id: 4, name: "Yogur Natural", price: 15.00, category: "Lácteos", brand: "Lala", rating: 4, description: "Yogur natural sin azúcar 250g.", image: "https://via.placeholder.com/300x300?text=Yogur+Lala", ref: "#" },
+    { id: 5, name: "Pan Blanco", price: 38.00, category: "Cereales", brand: "Bimbo", rating: 3, description: "Pan blanco grande 680g.", image: "https://via.placeholder.com/300x300?text=Pan+Bimbo", ref: "#" },
+    { id: 6, name: "Papas Sabritas", price: 18.50, category: "Botanas", brand: "Sabritas", rating: 5, description: "Papas fritas sabor original 45g.", image: "https://via.placeholder.com/300x300?text=Sabritas", ref: "#" },
+    { id: 7, name: "Jugo de Naranja", price: 22.00, category: "Jugos", brand: "Jumex", rating: 4, description: "Jugo de naranja 1 litro.", image: "https://via.placeholder.com/300x300?text=Jugo+Jumex", ref: "#" },
+    { id: 8, name: "Atún en Lata", price: 28.00, category: "Enlatados", brand: "Nobel", rating: 4, description: "Atún en agua 140g.", image: "https://via.placeholder.com/300x300?text=Atún+Nobel", ref: "#" },
+    { id: 9, name: "Zanahorias", price: 12.00, category: "Verduras", brand: "Sin Marca", rating: 4, description: "Zanahorias frescas por kilo.", image: "https://via.placeholder.com/300x300?text=Zanahorias", ref: "#" },
+    { id: 10, name: "Galletas Oreo", price: 25.00, category: "Postres", brand: "Bimbo", rating: 5, description: "Galletas sabor chocolate 156g.", image: "https://via.placeholder.com/300x300?text=Oreo", ref: "#" },
+    { id: 11, name: "Queso Panela", price: 85.00, category: "Lácteos", brand: "Lala", rating: 4, description: "Queso panela 400g.", image: "https://via.placeholder.com/300x300?text=Queso+Panela", ref: "#" },
+    { id: 12, name: "Fresas", price: 45.00, category: "Frutas", brand: "Sin Marca", rating: 4, description: "Fresas frescas por kilo.", image: "https://via.placeholder.com/300x300?text=Fresas", ref: "#" },
+    { id: 13, name: "Cereal Zucaritas", price: 65.00, category: "Cereales", brand: "Bimbo", rating: 3, description: "Cereal de maíz azucarado 500g.", image: "https://via.placeholder.com/300x300?text=Zucaritas", ref: "#" },
+    { id: 14, name: "Palomitas Act II", price: 15.50, category: "Botanas", brand: "Bimbo", rating: 4, description: "Palomitas para microondas mantequilla.", image: "https://via.placeholder.com/300x300?text=Palomitas", ref: "#" },
+    { id: 15, name: "Lechuga", price: 10.00, category: "Verduras", brand: "Sin Marca", rating: 4, description: "Lechuga romana fresca por pieza.", image: "https://via.placeholder.com/300x300?text=Lechuga", ref: "#" },
+    { id: 16, name: "Pastelito Gansito", price: 12.00, category: "Postres", brand: "Bimbo", rating: 5, description: "Pastelito cubierto de chocolate.", image: "https://via.placeholder.com/300x300?text=Gansito", ref: "#" },
+    { id: 17, name: "Chiles Jalapeños", price: 35.00, category: "Enlatados", brand: "Nobel", rating: 4, description: "Chiles jalapeños en escabeche 220g.", image: "https://via.placeholder.com/300x300?text=Jalapeños", ref: "#" },
+    { id: 18, name: "Jugo de Manzana", price: 24.00, category: "Jugos", brand: "Jumex", rating: 4, description: "Jugo de manzana 1 litro.", image: "https://via.placeholder.com/300x300?text=Jugo+Manzana", ref: "#" },
+    { id: 19, name: "Tomates", price: 20.00, category: "Verduras", brand: "Sin Marca", rating: 4, description: "Tomates rojos por kilo.", image: "https://via.placeholder.com/300x300?text=Tomates", ref: "#" },
+    { id: 20, name: "Yogur con Fruta", price: 18.00, category: "Lácteos", brand: "Lala", rating: 4, description: "Yogur con trozos de fruta 250g.", image: "https://via.placeholder.com/300x300?text=Yogur+Fruta", ref: "#" }
   ];
 
   // Variables de estado del catálogo
@@ -52,13 +52,13 @@ function initCatalog() {
             <div class="product-image">
                 <img src="${product.image}" alt="${product.name}">
             </div>
-            <div class="product-info">
+            <a class="product-info" href="${product.ref}">
                 <div class="product-name">${product.name}</div>
                 <div class="product-brand">${product.brand}</div>
                 <div class="product-price">$${product.price.toFixed(2)}</div>
                 <div class="product-description">${product.description}</div>
                 <div class="product-rating">${'★'.repeat(product.rating)}${'☆'.repeat(5 - product.rating)}</div>
-            </div>
+            </a>
         `;
       
         productsContainer.appendChild(productCard);
