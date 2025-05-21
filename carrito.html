@@ -26,7 +26,8 @@
           <div class="menu">
             <div class="iconos">
               <div class="icono">
-                <a href="login.html">
+                <a href="login.html" class="texto-login">Login</a>
+                <a href="perfil.html">
                   <img src="/imagenes/Iconos/perfil.png" alt="Perfil" />
                 </a>
               </div>
@@ -48,71 +49,77 @@
           </div>
         </div>
       </header>
-      
-      <!--CARRITO-->>
+
+      <!--CARRITO-->
       <section class="CARRITO">
         <div class="container">
-            <!-- Sección principal del carrito -->
-            <div class="carrito-seccion">
-                <h1 class="carrito-titulo">Mi Carrito</h1>
-                
-                <div class="carrito-items">
-                    <div class="carrito-vacio">
-                        Tu carrito está vacío
-                    </div>
-                </div>
+          <!-- Sección principal del carrito -->
+          <div class="carrito-seccion">
+            <h1 class="carrito-titulo">Mi Carrito</h1>
+
+            <div class="carrito-items">
+              <div class="carrito-vacio">Tu carrito está vacío</div>
             </div>
-            
-            <!-- Sección de pago -->
-            <div class="pago-seccion">
-                <h2 class="pago-titulo">Resumen de compra</h2>
-                
-                <div class="metodo-pago">
-                    <h3>Método de pago</h3>
-                    <div class="switch-container">
-                        <span class="switch-text activo" id="texto-efectivo">Efectivo</span>
-                        
-                        <label class="switch">
-                            <input type="checkbox" id="toggle-pago" onchange="cambiarMetodoPago()">
-                            <span class="slider"></span>
-                        </label>
-                        
-                        <span class="switch-text" id="texto-electronico">Electrónico</span>
-                    </div>
-                </div>
-                
-                <button class="btn-pagar">Pagar</button>
-                
-                <div class="seleccion-tarjeta desactivado" id="seleccion-tarjeta">
-                    <label for="tarjetas">Seleccionar tarjeta:</label>
-                    <select id="tarjetas">
-                        <option value="">-- Seleccione una tarjeta --</option>
-                        <option value="visa">Visa **** 1234</option>
-                        <option value="mastercard">Mastercard **** 5678</option>
-                        <option value="amex">American Express **** 9012</option>
-                    </select>
-                </div>
-                
-                <div class="resumen-pago">
-                    <div class="resumen-linea">
-                        <span>Subtotal:</span>
-                        <span>$0.00</span>
-                    </div>
-                    <div class="resumen-linea">
-                        <span>Envío:</span>
-                        <span>$0.00</span>
-                    </div>
-                    <div class="resumen-linea">
-                        <span>Descuentos:</span>
-                        <span>$0.00</span>
-                    </div>
-                    <div class="resumen-linea total">
-                        <span>Total:</span>
-                        <span>$0.00</span>
-                    </div>
-                </div>
+          </div>
+
+          <!-- Sección de pago -->
+          <div class="pago-seccion">
+            <h2 class="pago-titulo">Resumen de compra</h2>
+
+            <div class="metodo-pago">
+              <h3>Método de pago</h3>
+              <div class="switch-container">
+                <span class="switch-text activo" id="texto-efectivo"
+                  >Efectivo</span
+                >
+
+                <label class="switch">
+                  <input
+                    type="checkbox"
+                    id="toggle-pago"
+                    onchange="cambiarMetodoPago()"
+                  />
+                  <span class="slider"></span>
+                </label>
+
+                <span class="switch-text" id="texto-electronico"
+                  >Electrónico</span
+                >
+              </div>
             </div>
-        </div>    
+
+            <button class="btn-pagar">Pagar</button>
+
+            <div class="seleccion-tarjeta desactivado" id="seleccion-tarjeta">
+              <label for="tarjetas">Seleccionar tarjeta:</label>
+              <select id="tarjetas">
+                <option value="">-- Seleccione una tarjeta --</option>
+                <option value="visa">Visa **** 1234</option>
+                <option value="mastercard">Mastercard **** 5678</option>
+                <option value="amex">American Express **** 9012</option>
+              </select>
+            </div>
+
+            <div class="resumen-pago">
+              <div class="resumen-linea">
+                <span>Subtotal:</span>
+                <span>$0.00</span>
+              </div>
+              <div class="resumen-linea">
+                <span>Envío:</span>
+                <span>$0.00</span>
+              </div>
+              <div class="resumen-linea">
+                <span>Descuentos:</span>
+                <span>$0.00</span>
+              </div>
+              <div class="resumen-linea total">
+                <span>Total:</span>
+                <span>$0.00</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       <!--FOOTER-->
@@ -120,7 +127,7 @@
         <div class="footer-contenido">
           <div class="footer-enlaces">
             <div class="fila-footer">
-              <a href="#">Contacto</a>
+              <a href="contacto.html">Contacto</a>
               <a href="FAQs.html">Preguntas frecuentes</a>
             </div>
             <div class="fila-footer">

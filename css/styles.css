@@ -60,6 +60,18 @@ select {
   gap: 10px;
 }
 
+.icono {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.texto-login {
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
+}
+
 .icono img {
   height: 40px;
   width: 40px;
@@ -149,14 +161,16 @@ select {
   gap: 20px;
   overflow-x: hidden;
   scroll-behavior: smooth;
-  width: 100%;
-  max-width: 1000px;
+  width: 1020px;
+  padding: 0;
 }
 
 .container-promociones {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+  padding: 0;
 }
 
 .card-promos {
@@ -169,6 +183,7 @@ select {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  flex: 0 0 auto;
 }
 
 .card-promos img {
@@ -188,7 +203,7 @@ select {
 
 .texto-card-promociones h5 {
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: bold;
 }
 
 .precios {
@@ -210,12 +225,6 @@ select {
   color: red;
   font-weight: bold;
   font-size: 1rem;
-}
-
-.flechas {
-  font-size: 24px;
-  cursor: pointer;
-  margin: 0 10px;
 }
 
 /* Flechas carousel */
@@ -701,7 +710,7 @@ footer {
   width: 20%;
   padding: 20px;
   background-color: #fff;
-  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
   height: 100vh;
   overflow-y: auto;
 }
@@ -801,7 +810,7 @@ footer {
   background-color: #fff;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
 
@@ -810,7 +819,7 @@ footer {
 }
 
 .CATALOGO .product-image {
-  height: 180px;
+  height: auto;
   background-color: #eee;
   display: flex;
   align-items: center;
@@ -822,6 +831,7 @@ footer {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
 }
 
 .CATALOGO .product-info {
@@ -962,7 +972,8 @@ footer {
   border: 2px solid transparent;
 }
 
-.INFOPRODUCTO .imagen-secundaria:hover, .imagen-secundaria.activa {
+.INFOPRODUCTO .imagen-secundaria:hover,
+.imagen-secundaria.activa {
   border-color: #28a745;
 }
 
@@ -1304,7 +1315,7 @@ footer {
   right: 0;
   bottom: 0;
   background-color: #ccc;
-  transition: .4s;
+  transition: 0.4s;
   border-radius: 34px;
 }
 
@@ -1316,7 +1327,7 @@ footer {
   left: 4px;
   bottom: 4px;
   background-color: white;
-  transition: .4s;
+  transition: 0.4s;
   border-radius: 50%;
 }
 
@@ -1436,7 +1447,7 @@ footer {
 }
 
 .faq-question::after {
-  content: '+';
+  content: "+";
   font-size: 1.5em;
   transition: transform 0.3s;
 }
@@ -1470,133 +1481,156 @@ footer {
 
 .faq-answer li {
   margin-bottom: 8px;
-
-  
-#cuerpog{
-    margin: 0;
-    padding: 0;
-    background-color: white;
-    color: rgb(31, 31, 31);
-    font-family: sans-serif;
-
 }
 
-#texto h2{
-    color: rgb(96, 96, 96);
-    margin: 6px 0;
+/* NOSOTROS */
+.card-generica {
+  background-color: #f7f7f7;
+  padding: 30px;
+  border-radius: 16px;
+  margin: 0 auto 40px auto;
+  max-width: 900px;
+  border: 1px solid #6f6f6f2e;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  text-align: left;
 }
 
-#cuerpo{
-    display: flex;
-    flex-direction: row;
-    margin: 5%;
-
+.card-generica h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: black;
+  text-align: center;
 }
 
-#cuerpo div{
-    flex: 1;
-    padding: 0 3%;
+.card-generica p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #555;
+  text-align: justify;
+}
+.historia-contenido {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 20px;
 }
 
-#imagen img{
-    width: 100%;
-    height: auto;
+.historia-contenido p {
+  flex: 0 0 40%;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444444;
+  min-width: 250px;
+  text-align: justify;
 }
 
-#footer {
-    background-color: rgb(31, 31, 31);
-    height: 200px;
+.imagen-historia {
+  width: 700px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+.doble-columna {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+}
+.lista-politicas {
+  padding-left: 20px;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #444;
+}
+.lista-politicas li {
+  margin-bottom: 15px;
 }
 
-#footer h4{
-    background-color: rgb(31, 31, 31);
-    color: whitesmoke; 
-    padding: 2% 3%;
+/* PERFIL */
+.perfil-usuario {
+  padding: 30px;
 }
 
-#footer ul{
-    background-color: rgb(31, 31, 31);
-    margin: 0 5%;
-    list-style-type: none;
+.perfil-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
 }
 
-#footer ul li{
-    background-color: rgb(31, 31, 31);
-    color: whitesmoke; 
-    text-decoration: underline;
-    margin: 1% 0;
-    
+.perfil-card {
+  flex: 1 1 45%;
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #6f6f6f2e;
+  min-width: 300px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
-#contacto{
-    border-radius: 7px;
-    text-align: left;
-    border-style: solid;
-    border-width: 2.5px;
-    border-color: rgb(180, 180, 180);
-    margin: 50px 35px;
-    padding: 10px 15px 50px 15px;
-    font-size: 20px;
+.perfil-card h2 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  text-align: center;
 }
 
-#contacto span{
-    font-weight: bold;
-    margin: 7px;
+.perfil-info {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
-#cuerpog h1{
-    text-align: center;
-    font-weight: bolder;
+.foto-perfil {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #ccc;
 }
 
-#cuerpog h3{
-    text-align: center;
-    color: rgb(146, 146, 146);
-    font-weight: bold;
+.contacto-grid {
+  display: grid;
+  gap: 12px;
+  flex: 1 1 auto;
 }
 
-#cuerpo_perfil{
-    padding: 20px 0;
+.perfil-pedidos table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  font-size: 0.95rem;
 }
 
-#cuerpog table{
-    border-radius: 7px;
-    border-style: solid;
-    border-width: 2.5px;
-    border-color: rgb(180,180,180);
-    margin: 0 35px 60px;
-    width: 94.5%;
-    padding: 10px 20px 50px;
+.perfil-pedidos th,
+.perfil-pedidos td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
 }
 
-#cuerpog tbody{
-    height: 40px;
-
+.perfil-pedidos th {
+  background-color: #e4e4e4;
+  font-weight: 600;
 }
 
-#cuerpog table td{
-    padding: 0 40px 0 40px;
-    font-size: 20px;
-    
+.perfil-pedidos a {
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
 }
 
-#cuerpog table span{
- color: gray;
- text-decoration: underline;   
- font-style: italic;
- font-size: 15px;
+.perfil-pedidos a:hover {
+  text-decoration: underline;
+}
+.perfil-contenido {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
-#cuerpog table th{
-    font-weight: bold;
-    border-style: solid;
-    border-width: 0 0 2px 0;
-    border-color: gray;
-    padding: 10px;
-    font-size: 25px;
-}
-
-#cuerpog a{
-    background-color: transparent;
-    color: white;
+.perfil-info {
+  flex: 0 0 auto;
 }
