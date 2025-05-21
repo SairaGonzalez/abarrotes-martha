@@ -1527,8 +1527,8 @@ footer {
 }
 
 .imagen-historia {
-  width: 700px;
-  height: 400px;
+  width: 480px;
+  height: 270px;
   object-fit: cover;
   border-radius: 10px;
   flex-shrink: 0;
